@@ -8,16 +8,16 @@
             <h1><a href="">Django Girls Blog</a></h1>
         </div>
 
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+                <br/><br/><br/>
+            </div>
+        {% endfor %}
         <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+            <img src="https://cv4i6g.bn1304.livefilestore.com/y4mt78hmLTxPiWPhyj7p8z8CQiAGTutQSCt7uhxFw4MkvuocnfWiFPXX8Q-Q8S7DgYrVgOWwbqHIPu1uXqy1ALoGf3nxRRcEJLt1YHrqf_noXtTvx4YD_cUE3tDytphbRP9eXUC_kpF93wtveaL7bCche07kylkoGc_ukPMInRfkxKc8RdDR1bMABR_Rx5c21zHLEEY0QwmcAsvUOGeeD3Aww/FB_20141224_10_42_06_Saved_Picture.jpg?psid=1" />
         </div>
     </body>
 </html>
