@@ -10,9 +10,11 @@
     </head>
     <body>
     <div class="page-header">
+        {% if user.is_authenticated %}
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        {% endif %}
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
-    <img src="https://cv4i6g.bn1304.livefilestore.com/y4mt78hmLTxPiWPhyj7p8z8CQiAGTutQSCt7uhxFw4MkvuocnfWiFPXX8Q-Q8S7DgYrVgOWwbqHIPu1uXqy1ALoGf3nxRRcEJLt1YHrqf_noXtTvx4YD_cUE3tDytphbRP9eXUC_kpF93wtveaL7bCche07kylkoGc_ukPMInRfkxKc8RdDR1bMABR_Rx5c21zHLEEY0QwmcAsvUOGeeD3Aww/FB_20141224_10_42_06_Saved_Picture.jpg?psid=1" />
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
